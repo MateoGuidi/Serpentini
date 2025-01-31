@@ -5,44 +5,14 @@ This repository hosts the development of a **2D Snake game** built using Unity a
 
 ---
 
-## Features
+## Features to do
 
-- **High Score System**:
-  - Tracks and displays the player's best scores.
-  - Persistent storage to save progress between sessions.
-
-- **Multi-Language Support**:
-  - The game will support multiple languages to reach a broader audience.
-  - Easy to add new translations by editing the localization files.
-
-- **Controller Compatibility**:
-  - Playable using a game controller for a more immersive experience.
-  - Fully integrated with Unity's input system.
-
-- **Classic Gameplay**:
-  - Simple and intuitive mechanics inspired by the original Snake game.
-  - A clean, retro design with modern enhancements.
-
----
-
-## Current Status
-The project is currently in development. The following milestones are in progress:
-
-1. Designing the core Snake mechanics (movement, growth, collision).
-2. Implementing the high score system.
-3. Adding multi-language support.
-4. Testing game controller functionality.
-
----
-
-## How to Contribute
-Contributions are welcome! If you'd like to help:
-
-1. Fork the repository.
-2. Create a branch for your feature or bug fix.
-3. Submit a pull request with a detailed explanation of your changes.
-
-For major changes, please open an issue first to discuss your ideas.
+- [ ] **Make screens (Game Over, Pause, Main Menu and Settings)**
+- [ ] **Add music and sound effects**
+- [ ] **Add controller support**
+- [ ] **Add powerups**
+- [ ] **Add multiple languages**
+- [ ] **Add all icons and informations for final release**
 
 ---
 
@@ -52,7 +22,7 @@ This project is licensed under the [Restricted Use License](./LICENSE). Please r
 ---
 
 ## Contact
-For any questions or feedback, feel free to reach out to the author:
+For any questions or feedback, feel free to reach me:
 
 - **Name**: Mateo Guidi
 - **Email**: mateo.guidi5@gmail.com
