@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5971183561151109166}
   - component: {fileID: 8039676935845922001}
   - component: {fileID: 9340621485098556}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Snake (Body)
   m_TagString: Snake
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

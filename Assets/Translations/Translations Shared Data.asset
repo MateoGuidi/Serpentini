@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Translations Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Translations
+  m_TableCollectionNameGuidString: c1cfb4030fb0b1cbb909b0f64d80baec
+  m_Entries:
+  - m_Id: 332231471104
+    m_Key: score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 403794685952
+    m_Key: highscore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659926283255808
+    m_Key: return
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660139341316096
+    m_Key: mainmenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660328428929024
+    m_Key: retry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660470188015616
+    m_Key: play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660538915880960
+    m_Key: quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660610567176192
+    m_Key: settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 994092228853760
+    m_Key: gameover
+    m_Metadata:
+      m_Items: []
+  - m_Id: 994227650347008
+    m_Key: pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1024355742826496
+    m_Key: window
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1024463305752576
+    m_Key: volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1024511120818176
+    m_Key: keybinds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1024595279527936
+    m_Key: language
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8361082280502886633
+  references:
+    version: 2
+    RefIds:
+    - rid: 8361082280502886633
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1738436268402

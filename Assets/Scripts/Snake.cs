@@ -1,15 +1,31 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
+using UnityEngine.ResourceManagement.AsyncOperations;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class Snake : MonoBehaviour
 {
+    [Header("Sounds")]
+    [SerializeField] public AudioSource audioSource;
+    [SerializeField] public AudioClip eatSound;
+    [SerializeField] public AudioClip hurtSound;
     [Header("Snake Settings")]
     [SerializeField] public Transform segmentPrefab;
     [SerializeField] public int initialSize = 3;
+    [SerializeField] public PlayerInput playerInput;
     [Header("UI")]
     [SerializeField] public TMP_Text scoreText;
     [SerializeField] public TMP_Text highScoreText;
+    [SerializeField] public ParticleSystem newHighScoreEffect;
+    [Header("Localization")]
+    [SerializeField] public LocalizedString scoreString;
+    [SerializeField] public LocalizedString highScoreString;
+    [Header("Menus")]
+    [SerializeField] public PauseMenu pauseMenu;
+    [SerializeField] public GameOverMenu gameOverMenu;
 
     private Vector2 direction = Vector2.right;
     private List<Transform> segments;
@@ -35,34 +51,48 @@ public class Snake : MonoBehaviour
         }
     }
 
+    void PlaySound(AudioClip clip)
+    {
+        audioSource.clip = clip;
+        audioSource.Play();
+    }
+
     void Start()
     {
-        highScore = PlayerPrefs.GetInt("HighScore", 0);
         segments = new List<Transform>();
         segments.Add(this.transform);
         for (int i = 1; i < initialSize; i++)
         {
             segments.Add(Instantiate(segmentPrefab));
         }
+        highScore = PlayerPrefs.GetInt("HighScore", 0);
+        score = 0;
     }
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.RightArrow) && direction != Vector2.left)
+        Vector2 moveInput = playerInput.actions["Move"].ReadValue<Vector2>();
+        
+        if (moveInput.x > 0 && direction != Vector2.left)
         {
             direction = Vector2.right;
         }
-        else if (Input.GetKey(KeyCode.DownArrow) && direction != Vector2.up)
+        else if (moveInput.y < 0 && direction != Vector2.up)
         {
             direction = -Vector2.up;
         }
-        else if (Input.GetKey(KeyCode.LeftArrow) && direction != Vector2.right)
+        else if (moveInput.x < 0 && direction != Vector2.right)
         {
             direction = -Vector2.right;
         }
-        else if (Input.GetKey(KeyCode.UpArrow) && direction != Vector2.down)
+        else if (moveInput.y > 0 && direction != Vector2.down)
         {
             direction = Vector2.up;
+        }
+        
+        if (playerInput.actions["Pause"].triggered)
+        {
+            pauseMenu.TogglePause();
         }
     }
 
@@ -88,9 +118,10 @@ public class Snake : MonoBehaviour
         segment.position = segments[segments.Count - 1].position;
         segments.Add(segment);
         score += 100;
+        PlaySound(eatSound);
     }
 
-    void Reset()
+    public void Reset()
     {
         for (int i = 1; i < segments.Count; i++)
         {
@@ -113,23 +144,29 @@ public class Snake : MonoBehaviour
     void Stop()
     {
         isStopped = true;
+        PlaySound(hurtSound);
         if (score > highScore)
         {
             highScore = score;
+            newHighScoreEffect.Play();
             PlayerPrefs.SetInt("HighScore", highScore);
             PlayerPrefs.Save();
         }
-        //Show Game Over Screen
+        gameOverMenu.Show();
     }
 
-    void UpdateScore()
+    async void UpdateScore()
     {
-        scoreText.text = "Score: " + score;
+        AsyncOperationHandle<string> handle = scoreString.GetLocalizedStringAsync();
+        await handle.Task;
+        scoreText.text = string.Format(handle.Result, score);
     }
 
-    void UpdateHighScore()
+    async void UpdateHighScore()
     {
-        highScoreText.text = "High Score: " + highScore;
+        AsyncOperationHandle<string> handle = highScoreString.GetLocalizedStringAsync();
+        await handle.Task;
+        highScoreText.text = string.Format(handle.Result, highScore);
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -140,13 +177,7 @@ public class Snake : MonoBehaviour
         }
         if (other.tag == "Wall" || other.tag == "Snake")
         {
-            if (score > highScore)
-            {
-                highScore = score;
-                PlayerPrefs.SetInt("HighScore", highScore);
-                PlayerPrefs.Save();
-            } // Tmp (to remove in the future)
-            Reset(); // Tmp (should be Stop in the future)
+            Stop();
         }
-    } 
+    }
 }

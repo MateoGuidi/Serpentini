@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Translations_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: c1cfb4030fb0b1cbb909b0f64d80baec, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 332231471104
+    m_Localized: 'Score : {0}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 403794685952
+    m_Localized: 'Meilleur Score : {0}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 659926283255808
+    m_Localized: Retourner au jeu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660139341316096
+    m_Localized: Retourner au menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660328428929024
+    m_Localized: Re-essayer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660470188015616
+    m_Localized: Jouer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660538915880960
+    m_Localized: Quitter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 660610567176192
+    m_Localized: "Param\xE8tres"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 994092228853760
+    m_Localized: "Jeu Termin\xE9 !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 994227650347008
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1024355742826496
+    m_Localized: "Fen\xEAtre"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1024463305752576
+    m_Localized: Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1024511120818176
+    m_Localized: Touches
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1024595279527936
+    m_Localized: Langue
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -7,11 +7,11 @@ This repository hosts the development of a **2D Snake game** built using Unity a
 
 ## Features to do
 
-- [ ] **Make screens (Game Over, Pause, Main Menu and Settings)**
-- [ ] **Add music and sound effects**
+- [x] **Make screens (Game Over, Pause, Main Menu and Settings)**
+- [ ] **Enhance screens (Game Over, Pause, Main Menu and Settings)**
+- [x] **Add music and sound effects**
 - [ ] **Add controller support**
-- [ ] **Add powerups**
-- [ ] **Add multiple languages**
+- [x] **Add multiple languages**
 - [ ] **Add all icons and informations for final release**
 
 ---
