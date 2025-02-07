@@ -16,7 +16,7 @@ MonoBehaviour:
   m_GUID: 6ee5b1f3fd074bab4b4ca2b149eb309d
   m_SerializeEntries:
   - m_GUID: 15344ca6467bde5e48ba0a785798ef16
-    m_Address: "\u65E5\u672C\u8A9E"
+    m_Address: Japanese
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale
@@ -27,8 +27,8 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: b8752713b0bff33c68a2cb225594ad53
-    m_Address: "Fran\xE7ais"
+  - m_GUID: 84fe7714d2afc3b5e9c75923add7ea20
+    m_Address: French
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale

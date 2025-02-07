@@ -67,11 +67,61 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1024511120818176
-    m_Localized: Keybinds
+    m_Localized: 'Keybinds:'
     m_Metadata:
       m_Items: []
   - m_Id: 1024595279527936
     m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300329039540224
+    m_Localized: Fullscreen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300397696102400
+    m_Localized: Windowed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1313533615525888
+    m_Localized: New High Score!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1329986305642496
+    m_Localized: How To Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1349898518446080
+    m_Localized: You're a Snake!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1350123245060096
+    m_Localized: This is a Fruit!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1350287095545856
+    m_Localized: 'Every time you eat a fruit, you will increase your score.
+
+      Your
+      goal : get the best score!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1350747403632640
+    m_Localized: 'But when you eat a fruit, your body will grow.
+
+      And if you
+      hurt a wall or yourself, you''ll lose.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1351245745668096
+    m_Localized: Good game!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1355482504413184
+    m_Localized: Keyboard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1355572665171968
+    m_Localized: Controller
     m_Metadata:
       m_Items: []
   references:

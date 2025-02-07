@@ -71,6 +71,50 @@ MonoBehaviour:
     m_Key: language
     m_Metadata:
       m_Items: []
+  - m_Id: 1300329039540224
+    m_Key: fullscreen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300397696102400
+    m_Key: wIndowed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1313533615525888
+    m_Key: newhighscore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1329986305642496
+    m_Key: howtoplay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1349898518446080
+    m_Key: youresnake
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1350123245060096
+    m_Key: thereisfood
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1350287095545856
+    m_Key: goal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1350747403632640
+    m_Key: hurt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1351245745668096
+    m_Key: gg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1355482504413184
+    m_Key: keyboard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1355572665171968
+    m_Key: controller
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

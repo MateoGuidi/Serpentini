@@ -27,11 +27,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 659926283255808
-    m_Localized: Retourner au jeu
+    m_Localized: Retour au Jeu
     m_Metadata:
       m_Items: []
   - m_Id: 660139341316096
-    m_Localized: Retourner au menu
+    m_Localized: Retour au Menu
     m_Metadata:
       m_Items: []
   - m_Id: 660328428929024
@@ -67,11 +67,57 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1024511120818176
-    m_Localized: Touches
+    m_Localized: 'Touches :'
     m_Metadata:
       m_Items: []
   - m_Id: 1024595279527936
     m_Localized: Langue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300329039540224
+    m_Localized: "Plein \xE9cran"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300397696102400
+    m_Localized: "Fen\xEAtr\xE9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1313533615525888
+    m_Localized: Nouveau meilleur score !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1329986305642496
+    m_Localized: Comment Jouer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1349898518446080
+    m_Localized: Tu es un Serpent !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1350123245060096
+    m_Localized: "\xC7a, c'est un Fruit."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1350287095545856
+    m_Localized: "\xC0 chaque fois que tu manges un fruit, tu vas augmenter ton score.\nTon
+      but : avoir le meilleur score !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1350747403632640
+    m_Localized: "Mais quand tu manges un fruit, ton corps grossira.\nEt si tu heurtes
+      un m\xFBr ou toi-m\xEAme, tu perdras."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1351245745668096
+    m_Localized: Bon jeu !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1355482504413184
+    m_Localized: Clavier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1355572665171968
+    m_Localized: Manette
     m_Metadata:
       m_Items: []
   references:

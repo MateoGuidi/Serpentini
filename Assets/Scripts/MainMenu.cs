@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
+
     public void Play()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
@@ -15,5 +16,10 @@ public class MainMenu : MonoBehaviour
     public void Settings()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Settings");
+    }
+
+    public void HowToPlay()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("HowToPlay");
     }
 }

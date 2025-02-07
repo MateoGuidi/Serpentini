@@ -26,6 +26,8 @@ public class Snake : MonoBehaviour
     [Header("Menus")]
     [SerializeField] public PauseMenu pauseMenu;
     [SerializeField] public GameOverMenu gameOverMenu;
+    [Header("Food")]
+    [SerializeField] public Food food;
 
     private Vector2 direction = Vector2.right;
     private List<Transform> segments;
@@ -66,6 +68,7 @@ public class Snake : MonoBehaviour
             segments.Add(Instantiate(segmentPrefab));
         }
         highScore = PlayerPrefs.GetInt("HighScore", 0);
+        Time.timeScale = 1;
         score = 0;
     }
 
@@ -73,26 +76,37 @@ public class Snake : MonoBehaviour
     {
         Vector2 moveInput = playerInput.actions["Move"].ReadValue<Vector2>();
         
-        if (moveInput.x > 0 && direction != Vector2.left)
-        {
-            direction = Vector2.right;
-        }
-        else if (moveInput.y < 0 && direction != Vector2.up)
-        {
-            direction = -Vector2.up;
-        }
-        else if (moveInput.x < 0 && direction != Vector2.right)
-        {
-            direction = -Vector2.right;
-        }
-        else if (moveInput.y > 0 && direction != Vector2.down)
-        {
-            direction = Vector2.up;
-        }
-        
         if (playerInput.actions["Pause"].triggered)
         {
             pauseMenu.TogglePause();
+        }
+        
+        if (Time.timeScale == 0)
+        {
+            return;
+        }
+        
+        if (Mathf.Abs(moveInput.x) > Mathf.Abs(moveInput.y))
+        {
+            if (moveInput.x > 0 && direction != Vector2.left)
+            {
+                direction = Vector2.right;
+            }
+            else if (moveInput.x < 0 && direction != Vector2.right)
+            {
+                direction = Vector2.left;
+            }
+        }
+        else
+        {
+            if (moveInput.y < 0 && direction != Vector2.up)
+            {
+                direction = Vector2.down;
+            }
+            else if (moveInput.y > 0 && direction != Vector2.down)
+            {
+                direction = Vector2.up;
+            }
         }
     }
 
@@ -118,6 +132,7 @@ public class Snake : MonoBehaviour
         segment.position = segments[segments.Count - 1].position;
         segments.Add(segment);
         score += 100;
+        Time.timeScale += 0.02f;
         PlaySound(eatSound);
     }
 
@@ -138,6 +153,8 @@ public class Snake : MonoBehaviour
         }
 
         this.transform.position = Vector3.zero;
+        Time.timeScale = 1;
+        food.RandomPosition();
         isStopped = false;
     }
 
@@ -151,8 +168,10 @@ public class Snake : MonoBehaviour
             newHighScoreEffect.Play();
             PlayerPrefs.SetInt("HighScore", highScore);
             PlayerPrefs.Save();
+            gameOverMenu.Show(true);
+        }  else {
+            gameOverMenu.Show(false);
         }
-        gameOverMenu.Show();
     }
 
     async void UpdateScore()

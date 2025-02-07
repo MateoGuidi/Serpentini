@@ -19,59 +19,103 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 332231471104
-    m_Localized: 'Score: {0}'
+    m_Localized: "\u30B9\u30B3\u30A2 : {0}"
     m_Metadata:
       m_Items: []
   - m_Id: 403794685952
-    m_Localized: 'High Score: {0}'
+    m_Localized: "\u30CF\u30A4\u30B9\u30B3\u30A2 : {0}"
     m_Metadata:
       m_Items: []
   - m_Id: 659926283255808
-    m_Localized: Return to game
+    m_Localized: "\u30B2\u30FC\u30E0\u306B\u623B\u308B"
     m_Metadata:
       m_Items: []
   - m_Id: 660139341316096
-    m_Localized: Back to menu
+    m_Localized: "\u30E1\u30CB\u30E5\u30FC\u306B\u623B\u308B"
     m_Metadata:
       m_Items: []
   - m_Id: 660328428929024
-    m_Localized: Retry
+    m_Localized: "\u30EA\u30C8\u30E9\u30A4"
     m_Metadata:
       m_Items: []
   - m_Id: 660470188015616
-    m_Localized: Play
+    m_Localized: "\u30B9\u30BF\u30FC\u30C8"
     m_Metadata:
       m_Items: []
   - m_Id: 660538915880960
-    m_Localized: Quit
+    m_Localized: "\u3084\u3081\u308B"
     m_Metadata:
       m_Items: []
   - m_Id: 660610567176192
-    m_Localized: Settings
+    m_Localized: "\u8A2D\u5B9A"
     m_Metadata:
       m_Items: []
   - m_Id: 994092228853760
-    m_Localized: Game Over!
+    m_Localized: "\u30B2\u30FC\u30E0\u30AA\u30FC\u30D0\u30FC\uFF01"
     m_Metadata:
       m_Items: []
   - m_Id: 994227650347008
-    m_Localized: Pause
+    m_Localized: "\u30DD\u30FC\u30BA"
     m_Metadata:
       m_Items: []
   - m_Id: 1024355742826496
-    m_Localized: Window
+    m_Localized: "\u30A6\u30A3\u30F3\u30C9\u30A6"
     m_Metadata:
       m_Items: []
   - m_Id: 1024463305752576
-    m_Localized: Volume
+    m_Localized: "\u30DC\u30EA\u30E5\u30FC\u30E0"
     m_Metadata:
       m_Items: []
   - m_Id: 1024511120818176
-    m_Localized: Keybinds
+    m_Localized: "\u30AD\u30FC\u30B3\u30F3\u30D5\u30A3\u30B0"
     m_Metadata:
       m_Items: []
   - m_Id: 1024595279527936
-    m_Localized: Language
+    m_Localized: "\u8A00\u8A9E"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300329039540224
+    m_Localized: "\u30D5\u30EB\u30B9\u30AF\u30EA\u30FC\u30F3"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1300397696102400
+    m_Localized: "\u30A6\u30A3\u30F3\u30C9\u30A6\u30E2\u30FC\u30C9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1313533615525888
+    m_Localized: "\u65B0\u305F\u306A\u30CF\u30A4\u30B9\u30B3\u30A2\uFF01"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1329986305642496
+    m_Localized: "\u904A\u3073\u65B9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1349898518446080
+    m_Localized: "\u541B\u306F\u86C7\u3060\uFF01"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1350123245060096
+    m_Localized: "\u30D5\u30EB\u30FC\u30C4\u3092\u98DF\u3079\u308B\u5EA6\u306B\u30B9\u30B3\u30A2\u304C\u4E0A\u304C\u308B\u3002\u76EE\u6A19\u306F\u30D9\u30B9\u30C8\u30B9\u30B3\u30A2\u3092\u51FA\u3059\u3053\u3068\uFF01"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1350287095545856
+    m_Localized: "\u3067\u3082\u3001\u30D5\u30EB\u30FC\u30C4\u3092\u98DF\u3079\u308C\u3070\u3001\u4F53\u306F\u6210\u9577\u3059\u308B\u3002"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1350747403632640
+    m_Localized: "\u305D\u3057\u3066\u58C1\u3084\u81EA\u5206\u306B\u3076\u3064\u304B\u3063\u305F\u3089\u8CA0\u3051\u308B\u3002"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1351245745668096
+    m_Localized: "\u697D\u3057\u3093\u3067\u306D\uFF01"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1355482504413184
+    m_Localized: "\u30AD\u30FC\u30DC\u30FC\u30C9"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1355572665171968
+    m_Localized: "\u30B3\u30F3\u30C8\u30ED\u30FC\u30E9\u30FC"
     m_Metadata:
       m_Items: []
   references:

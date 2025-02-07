@@ -97,7 +97,7 @@ AudioMixerController:
   m_UpdateMode: 0
   m_ExposedParameters:
   - guid: 698907ea4f450fab29fa7b3b7442a5d7
-    name: MyExposedParam
+    name: Master
   m_AudioMixerGroupViews:
   - guids:
     - 46dd6dc61e54bbeca927edafd9657947
@@ -170,18 +170,26 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: b48825b37e307f370af44a0ab3829ece
   m_FloatValues:
+    21a35cb0dbc194f11a5d2247d5a780ac: 2
     51c04ad08990527deac5dc46348b2a37: 2000
     13edd252209c8b2798b4b803c3542f31: 300
-    84e8ab26f3e3afee697ed267647530d5: -200
+    aefee9f2b68d24467b3878c69d6fc838: 100
+    315a0b2466f6029d684297a7460bbfac: 0
+    84e8ab26f3e3afee697ed267647530d5: -500
     50b75a9633b96627c96140f065ff7d2c: 1.18
+    51c26db6db64f177ca44c3e64fe7b836: -5000
     60befea79cd599c97b8768454b1f3538: 1
     a59c8e087756116cf9f3a89e7704ad49: 0.55000055
-    ad0f41b8475c2931a9135a0f41491e2a: 0
+    ad0f41b8475c2931a9135a0f41491e2a: -3000
     5614420946a1c41cb94efa5a14976dac: 0
+    09d80c79bffc68f23971e763b4c42761: 1
     9e7dc17adee81b2b4afa23e41f76ef09: -0.27209902
     4d49eefabd96d481799f8605b97a7c30: 10
-    7bd33a4bd364fc2c4ac100916e1432a3: 600
-    06a5d7be6fa8944deb2d54dc7b51bba8: -2000
+    7bd33a4bd364fc2c4ac100916e1432a3: 400
+    41047e9bb33d0443bb8e5d8bb0d51908: 1000
+    46cb609c7dd19738e8aeb97d26c8783d: 100
+    4acdf38eae994cfbeaadf2dd4c98c745: -10000
+    06a5d7be6fa8944deb2d54dc7b51bba8: 0
     95d772ff73d81b79fb4683ebc561cada: 545.8475
   m_TransitionOverrides: {}
 --- !u!244 &2371070569002016657

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.EventSystems;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -7,6 +8,9 @@ public class PauseMenu : MonoBehaviour
     public AudioMixerGroup musicMixer;
     public AudioMixerGroup musicWithEffectsMixer;
     public GameObject gameoverMenu;
+    public GameObject firstElement;
+
+    private float savedTimeScale;
 
     public void TogglePause()
     {
@@ -25,16 +29,19 @@ public class PauseMenu : MonoBehaviour
 
     public void Pause()
     {
+        savedTimeScale = Time.timeScale;
         Time.timeScale = 0;
         this.gameObject.SetActive(true);
         music.outputAudioMixerGroup = musicWithEffectsMixer;
+        EventSystem.current.SetSelectedGameObject(firstElement);
     }
 
     public void Resume()
     {
-        Time.timeScale = 1;
+        Time.timeScale = savedTimeScale;
         this.gameObject.SetActive(false);
         music.outputAudioMixerGroup = musicMixer;
+        EventSystem.current.SetSelectedGameObject(null);
     }
 
     public void Home()
