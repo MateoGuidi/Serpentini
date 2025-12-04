@@ -52,17 +52,23 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/serpentini.loader.js";
+      var loaderUrl = buildUrl + "/Serpentini.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/serpentini.data.br",
-        frameworkUrl: buildUrl + "/serpentini.framework.js.br",
-        codeUrl: buildUrl + "/serpentini.wasm.br",
+        dataUrl: buildUrl + "/Serpentini.data.unityweb",
+        frameworkUrl: buildUrl + "/Serpentini.framework.js.unityweb",
+        codeUrl: buildUrl + "/Serpentini.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "MateoGUIDI",
         productName: "Serpentini",
         productVersion: "1.0",
         showBanner: unityShowBanner,
+        // errorHandler: function(err, url, line) {
+        //    alert("error " + err + " occurred at line " + line);
+        //    // Return 'true' if you handled this error and don't want Unity
+        //    // to process it further, 'false' otherwise.
+        //    return true;
+        // },
       };
 
       // By default, Unity keeps WebGL canvas render target size matched with
