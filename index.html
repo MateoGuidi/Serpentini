@@ -99,8 +99,8 @@
 
       } else {
         // Force fullscreen canvas
-        canvas.style.width = "100vh";
-        canvas.style.height = "100vh";
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
         canvas.style.position = "fixed";
         canvas.style.top = "0";
         canvas.style.left = "0";
@@ -113,17 +113,12 @@
       var script = document.createElement("script");
       script.src = loaderUrl;
       script.onload = () => {
-        createUnityInstance(canvas, config, (progress) => {
-          document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
-              }).then((unityInstance) => {
-                document.querySelector("#unity-loading-bar").style.display = "none";
-                document.querySelector("#unity-fullscreen-button").onclick = () => {
-                  unityInstance.SetFullscreen(1);
-                };
-              }).catch((message) => {
-                alert(message);
-              });
-            };
+      createUnityInstance(canvas, config, (progress) => {
+        }).then((unityInstance) => {
+        }).catch((message) => {
+          alert(message);
+        });
+      };
 
       document.body.appendChild(script);
 
